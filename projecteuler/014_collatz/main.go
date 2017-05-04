@@ -28,6 +28,7 @@ func main() {
 							}
 						}
 					}
+					delete(chains, temp)
 					break
 				} else {
 					chain = append(chain, temp)
