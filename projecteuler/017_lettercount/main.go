@@ -12,6 +12,11 @@ func main() {
 	fmt.Println(sum)
 }
 
+//Parse takes an integer between 1 and 1000 inclusive.
+//It returns the number of characters in the representation
+//of that integer in words. British rules are used.
+//The number 342 would be three hundred and forty-two.
+//Spaces and hyphens are ignored in the count.
 func Parse(i int) int {
 	var s int
 	j, k, l := i/100, i%100-i%10, i%10
