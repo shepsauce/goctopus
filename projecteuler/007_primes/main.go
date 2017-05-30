@@ -1,5 +1,6 @@
 package prime
 
+//Prime creates slice of prime numbers up to n
 func Prime(n int) []int {
 	var slice []int
 	slice = append(slice, 2, 3, 5, 7, 11, 13, 17, 19)

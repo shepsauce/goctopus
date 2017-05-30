@@ -10,7 +10,7 @@ func main() {
 		for k, v := range m {
 			d += v
 			if i%4 == 0 && k == 1 {
-				d += 1
+				d++
 			}
 			if d%7 == 0 {
 				count++

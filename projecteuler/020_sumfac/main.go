@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fac := big.NewInt(1)
-	for i := int64(2); i < 101; i += 1 {
+	for i := int64(2); i < 101; i++ {
 		fac.Mul(fac, big.NewInt(i))
 	}
 	mod := new(big.Int)
