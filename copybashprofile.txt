@@ -1,2 +1,7 @@
-export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/goctopus/bin:$HOME/.cabal/bin:$HOME/haskell/bin:$HOME/go/bin:$PATH"
 export GOPATH="$HOME/goctopus"
+
+[[ -f "$HOME/git-completion.bash" ]] && source "$HOME/git-completion.bash"
+[[ -f "$HOME/git-prompt.sh" ]] && source "$HOME/git-prompt.sh"
+
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
