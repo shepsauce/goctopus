@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"strings"
+	"sort"
 )
 
 func main() {
@@ -15,21 +16,21 @@ func main() {
 		log.Fatal(err)
 	}
 	names := strings.Split(string(file[1:len(file)-1]),"\",\"")
-	//fmt.Println(names, p)
+	//fmt.Println(names, sum)
+	sort.Strings(names)
 	for index, name := range names {
 		a := big.NewInt(0)
 		for _, char := range name {
 			b := big.NewInt( int64(char - '@'))
+			//fmt.Println(b)
 			a.Add(a, b)
 		}
-		fmt.Println(index)
+		//fmt.Println(index+1)
+		//fmt.Println(a)
 		a.Mul(a, big.NewInt(int64(index+1)))
-		fmt.Println(a)
+		//fmt.Println(a)
 		sum.Add(sum, a)
-		fmt.Println(sum)
-		if index == 3 {
-			break
-		}
+		//fmt.Println(sum)
 	}
 	fmt.Println(sum)
 }
