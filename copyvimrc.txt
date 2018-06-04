@@ -5,6 +5,8 @@ call plug#end()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+"execute pathogen#infect()
+
 set autowrite
 set number
 set list
@@ -38,7 +40,13 @@ endfunction
 let @b = ':GoBuild'
 let @p = ':GoDefPop'
 map  :cnext
-map  :cprevious
+map  :cprevious
+
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_auto_sameids = 1
 
 autocmd Filetype go command! -bang A call go#alternate#Switch(!0, 'edit')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(!0, 'vsplit')
