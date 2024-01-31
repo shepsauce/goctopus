@@ -99,20 +99,20 @@ button {
   align-items: center;
 }
 
-.infotitle {
+.info > .infotitle {
   font-size: xx-large;
 }
 
-.characters {
+.info > .characters {
   gap: 52px;
   flex-wrap: wrap;
 }
 
-.character {
+.info > .characters > .character {
   max-width: 200px;
 }
 
-.footer {
+.info > .footer {
   position: fixed;
   bottom: 0;
   left: 0;
