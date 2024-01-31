@@ -87,3 +87,39 @@ button {
   width: 48px;
   height: 48px;
 }
+
+.info {
+  background: white;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infotitle {
+  font-size: xx-large;
+}
+
+.characters {
+  gap: 52px;
+  flex-wrap: wrap;
+}
+
+.character {
+  max-width: 200px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
