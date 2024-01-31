@@ -17,21 +17,39 @@
     height: 80px;
 }
 
-.header  {
-  font-family: monospace;
-  background: papayawhip;
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px;
 }
 
+.header#first  {
+  font-family: monospace;
+  background: papayawhip;
+}
+
+.header#second {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  gap: 16px;
+}
+
 .logo {
   font-size: 48px;
   font-weight: 900;
+}
+
+.logo#second {
+  color: rebeccapurple;
+  font-style: italic;
+}
+
+.logo#first {
+  margin: auto;
   color: tomato;
   background: white;
-  margin: auto;
   padding: 6px 32px;
 }
 
@@ -51,4 +69,21 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: rebeccapurple;
+  color: white;
+  padding: 8px 24px;
+  margin-left: auto;
+}
+
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
